@@ -1,3 +1,7 @@
+#import sys
+#sys.path.append('../../')
+#from librarys import prime_factorization
+
 def factorization(n):# 計算量O(√N)
     arr = {}
     temp = n
@@ -16,3 +20,16 @@ def factorization(n):# 計算量O(√N)
         arr[n] = 1
 
     return arr
+
+
+
+x = int(input())
+while(True):
+    p = factorization(x)
+    if (len(p)==1) & (x in p):
+        break
+    else:
+        x += 1
+
+print(x)
+
