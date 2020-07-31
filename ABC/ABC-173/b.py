@@ -8,3 +8,4 @@ for i in range(N):
 
 for k, v in dic.items():
     print(k+" x "+str(v))
+
